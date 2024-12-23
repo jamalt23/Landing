@@ -1,0 +1,98 @@
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    header {
+        background-size: 1100px;
+        padding: 15px;
+    }
+
+    header .container {
+        height: 100%;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    menu li, ul li {
+        display: inline-block;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin: 50px 0;
+    }
+
+    #hero .btn {
+        height: 36px;
+        width: 190px;
+        padding: 7px 0;
+    }
+
+    .btn#learn-more-btn {
+        margin: 50px 15px;
+    }
+
+    section {
+        flex-direction: row;
+        overflow: auto;
+        padding: 100px 0;
+    }
+    section#features {
+        flex-direction: row-reverse;
+    }
+    section:not(#features) img {
+        flex: 0 0 40%
+    }
+    section .text {
+        flex: 0 0 50%;
+    }
+
+    #pricing {
+        padding: 200px 0;
+        background-position: auto;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    footer .btn {
+        margin: 5px 0;
+    }
+
+    footer menu {
+        flex-direction: row;
+        padding-left: 2vw;
+    }
+
+    footer .container div {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        background-image: url('../img/header-bg.svg');
+        height: 1160px;
+    }
+    #hero {
+        max-width: 540px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        padding: 0;
+    }
+}

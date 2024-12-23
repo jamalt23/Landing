@@ -1,0 +1,35 @@
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #ffffff88;
+    border: 1px solid #333;
+    width: min-content;
+}
+.dropdown .dropdown {
+    display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+    nav li:hover {
+        position: relative;
+    }
+    nav li:hover .dropdown {
+        display: block;
+    }
+    .dropdown li:hover .dropdown {
+        display: block !important;
+        top: -35px;
+        left: 125px;
+        font-size: .85rem;
+    }
+    .dropdown li {
+        margin: 0;
+        padding: 10px 20px;
+        width: 100%;
+        transition: .3s;
+    }
+    .dropdown li:hover {
+        background: #33333333;
+        background-size: 100%;
+    }
+}
